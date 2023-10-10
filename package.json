@@ -13,7 +13,7 @@
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "commit": "git-cz",
-    "lint:strict": "eslint --max-warnings=0 src",
+    "lint:strict": "eslint --max-warnings=0",
     "test:watch": "jest --watch",
     "test": "jest",
     "format": "prettier -w .",
