@@ -1,8 +1,6 @@
 import type * as lucideReact from 'lucide-react';
 import { Moon, SunMedium } from 'lucide-react';
 
-export type Icon = lucideReact.Icon;
-
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
