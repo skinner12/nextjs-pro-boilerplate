@@ -19,11 +19,10 @@ export const metadata: Metadata = {
     'In this page something went wrong. Nextjs boilerplate starter has not this page',
 };
 export default function Error({
-  error,
-  reset,
+  error, // reset,
 }: {
   error: Error & { digest?: string };
-  reset: () => void;
+  // reset: () => void;
 }) {
   useEffect(() => {
     // Log the error to an error reporting service
