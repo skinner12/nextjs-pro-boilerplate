@@ -1,9 +1,11 @@
 import '@/styles/globals.css';
 
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 
 import Footer from '@/components/footer';
 import * as siteHeader from '@/components/header';
+import Loading from '@/components/Loading';
 import { ThemeProvider } from '@/components/theme-provider';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
@@ -72,7 +74,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <div className=''>
             <siteHeader.Header />
-            <div className=''>{children}</div>
+            <Suspense fallback={<Loading />}>
+              <div className=''>{children}</div>
+            </Suspense>
           </div>
           <Footer />
         </ThemeProvider>
