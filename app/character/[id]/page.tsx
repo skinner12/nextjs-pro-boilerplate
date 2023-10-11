@@ -129,7 +129,7 @@ export default async function SingleCharacter({
                 </div>
                 <CollapsibleContent>
                   {character.episode.map((ep, index) => (
-                    <p key={index} className=''>
+                    <p key={ep} className=''>
                       Episode {index + 1}
                     </p>
                   ))}
